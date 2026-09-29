@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DulceTiberia | Coffee Break Corporativo y Repostería de Autor en Antofagasta</title>
+  <meta name="description" content="Coffee break corporativo, cóctel y repostería artesanal en Antofagasta. Tortas de novios, temáticas, tradicionales y personalizadas. Despacho en toda la ciudad y facturación para empresas.">
+  <meta name="theme-color" content="#255C7B">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DulceTiberia | Coffee Break y Repostería de Autor en Antofagasta">
+  <meta property="og:description" content="Pausas de trabajo impecables y celebraciones memorables. Coffee break corporativo, cóctel y tortas artesanales en Antofagasta.">
+  <meta property="og:image" content="assets/logo.webp">
+  <meta property="og:locale" content="es_CL">
+
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crema: { DEFAULT: '#FDF3EC', 100: '#FEF8F4', 200: '#FBE6DA', 300: '#F6D5C6' },
+            petroleo: { DEFAULT: '#255C7B', 700: '#1D4A63', 800: '#163A4F', 50: '#E9F1F5' },
+            frutilla: { DEFAULT: '#E0697F', 600: '#C9506A', 100: '#FBE1E6' },
+            oro: { DEFAULT: '#C9A13B', 300: '#E6CE8A' },
+            choco: { DEFAULT: '#3E2E2A', 600: '#5E4A44' }
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', 'cursive'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Montserrat', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            suave: '0 10px 30px -12px rgba(62, 46, 42, 0.25)',
+            tarjeta: '0 20px 45px -20px rgba(37, 92, 123, 0.35)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    }
+    [x-cloak], .oculto { display: none !important; }
+    .anillo-oro { box-shadow: 0 0 0 3px #FDF3EC, 0 0 0 5px #C9A13B; }
+    .texto-etiqueta { letter-spacing: 0.35em; }
+    .faq-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+    .faq-panel[data-abierto="true"] { grid-template-rows: 1fr; }
+    .faq-panel > div { overflow: hidden; }
+    .faq-item[data-abierto="true"] .faq-icono { transform: rotate(180deg); }
+    .item-catalogo { transition: opacity 0.25s ease, transform 0.25s ease; }
+    .campo { width: 100%; border-radius: 0.75rem; border: 1px solid #E8D3C7; background: #FFFFFF; padding: 0.75rem 1rem; color: #3E2E2A; font-size: 0.95rem; transition: border-color 0.2s, box-shadow 0.2s; }
+    .campo:focus { outline: none; border-color: #255C7B; box-shadow: 0 0 0 3px rgba(37, 92, 123, 0.18); }
+    .campo[aria-invalid="true"] { border-color: #C9506A; box-shadow: 0 0 0 3px rgba(201, 80, 106, 0.15); }
+    .trampa { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }
+    dialog::backdrop { background: rgba(22, 58, 79, 0.85); }
+    :focus-visible { outline: 3px solid #C9A13B; outline-offset: 3px; }
+  </style>
+</head>
+<body class="bg-crema font-sans text-choco antialiased">
+
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-full focus:bg-petroleo focus:px-5 focus:py-2 focus:text-white">Saltar al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header id="encabezado" class="sticky top-0 z-50 border-b border-transparent bg-crema/90 backdrop-blur transition-shadow">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8" aria-label="Navegación principal">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="DulceTiberia, ir al inicio">
+        <img src="assets/logo.webp" alt="" width="52" height="52" class="h-12 w-12 rounded-full object-cover anillo-oro sm:h-[52px] sm:w-[52px]">
+        <span class="leading-none">
+          <span class="block font-script text-3xl text-petroleo">Dulce Tiberia</span>
+          <span class="mt-1 hidden text-[10px] font-semibold uppercase texto-etiqueta text-choco-600 sm:block">Repostería · Coffee Break</span>
+        </span>
+      </a>
+
+      <ul class="hidden items-center gap-7 text-sm font-medium lg:flex">
+        <li><a href="#servicios" class="transition-colors hover:text-frutilla-600">Servicios</a></li>
+        <li><a href="#packs" class="transition-colors hover:text-frutilla-600">Packs Coffee Break</a></li>
+        <li><a href="#reposteria" class="transition-colors hover:text-frutilla-600">Repostería</a></li>
+        <li><a href="#cobertura" class="transition-colors hover:text-frutilla-600">Zonas de Cobertura</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <a href="https://www.instagram.com/dulcetiberia/" target="_blank" rel="noopener noreferrer" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-frutilla/40 text-frutilla-600 transition hover:bg-frutilla hover:text-white" aria-label="Instagram de DulceTiberia (se abre en una pestaña nueva)">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#cotizar" class="hidden rounded-full bg-petroleo px-5 py-2.5 text-sm font-semibold text-white shadow-suave transition hover:bg-petroleo-700 sm:inline-flex">Cotizar</a>
+        <button id="btn-menu" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-petroleo/20 text-petroleo lg:hidden" aria-controls="menu-movil" aria-expanded="false" aria-label="Abrir menú">
+          <i data-lucide="menu" class="icono-abrir h-5 w-5" aria-hidden="true"></i>
+          <i data-lucide="x" class="icono-cerrar oculto h-5 w-5" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div id="menu-movil" class="oculto border-t border-crema-300 bg-crema lg:hidden">
+      <ul class="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 text-base font-medium sm:px-6">
+        <li><a href="#servicios" class="block rounded-lg px-3 py-3 hover:bg-crema-200">Servicios</a></li>
+        <li><a href="#packs" class="block rounded-lg px-3 py-3 hover:bg-crema-200">Packs Coffee Break</a></li>
+        <li><a href="#reposteria" class="block rounded-lg px-3 py-3 hover:bg-crema-200">Repostería</a></li>
+        <li><a href="#cobertura" class="block rounded-lg px-3 py-3 hover:bg-crema-200">Zonas de Cobertura</a></li>
+        <li class="pt-2"><a href="#cotizar" class="block rounded-full bg-petroleo px-5 py-3 text-center font-semibold text-white">Cotizar</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="relative overflow-hidden">
+      <div class="pointer-events-none absolute -right-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-frutilla-100 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-petroleo-50 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-20 pt-12 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pb-28 lg:pt-20">
+        <div>
+          <p class="inline-flex items-center gap-2 rounded-full border border-oro/50 bg-white/60 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-choco-600">
+            <i data-lucide="map-pin" class="h-4 w-4 text-frutilla-600" aria-hidden="true"></i>
+            Antofagasta, Chile
+          </p>
+          <h1 class="mt-6 font-serif text-4xl font-semibold leading-tight text-petroleo-800 sm:text-5xl lg:text-6xl">
+            Coffee break a la hora exacta y repostería de autor en
+            <span class="font-script text-5xl font-normal text-frutilla-600 sm:text-6xl lg:text-7xl">Antofagasta</span>
+          </h1>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-choco-600">
+            Montamos pausas de trabajo impecables para empresas, mineras e instituciones, y creamos tortas y dulces artesanales que convierten cada celebración en un recuerdo. Dos propuestas, un mismo estándar: puntualidad, presentación cuidada y sabor casero.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#cotizar" data-servicio="Coffee break corporativo" class="btn-cotizar inline-flex items-center justify-center gap-2 rounded-full bg-petroleo px-7 py-4 font-semibold text-white shadow-tarjeta transition hover:-translate-y-0.5 hover:bg-petroleo-700">
+              <i data-lucide="coffee" class="h-5 w-5" aria-hidden="true"></i>
+              Cotizar Coffee Break
+            </a>
+            <a href="#reposteria" class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-frutilla bg-white px-7 py-4 font-semibold text-frutilla-600 transition hover:-translate-y-0.5 hover:bg-frutilla hover:text-white">
+              <i data-lucide="cake-slice" class="h-5 w-5" aria-hidden="true"></i>
+              Ver Catálogo Dulce
+            </a>
+          </div>
+
+          <ul class="mt-10 grid gap-3 text-sm font-medium sm:grid-cols-3" aria-label="Garantías">
+            <li class="flex items-center gap-2 rounded-2xl bg-white/70 px-4 py-3 shadow-sm">
+              <i data-lucide="receipt" class="h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>
+              Facturación electrónica al día
+            </li>
+            <li class="flex items-center gap-2 rounded-2xl bg-white/70 px-4 py-3 shadow-sm">
+              <i data-lucide="truck" class="h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>
+              Despacho en todo Antofagasta
+            </li>
+            <li class="flex items-center gap-2 rounded-2xl bg-white/70 px-4 py-3 shadow-sm">
+              <i data-lucide="calendar-clock" class="h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>
+              Montajes puntuales garantizados
+            </li>
+          </ul>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-lg lg:max-w-none">
+          <div class="overflow-hidden rounded-[2rem] shadow-tarjeta">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1100&q=75" alt="Mesa con tazas de café de grano y arte latte" width="1100" height="1300" class="aspect-[4/5] w-full object-cover" fetchpriority="high">
+          </div>
+          <div class="absolute -bottom-8 -left-4 w-40 overflow-hidden rounded-3xl border-4 border-crema shadow-tarjeta sm:-left-10 sm:w-56">
+            <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=600&q=75" alt="Torta de novios de tres pisos decorada con rosas" width="600" height="600" class="aspect-square w-full object-cover">
+          </div>
+          <div class="absolute -right-2 top-6 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-suave sm:-right-6">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-frutilla-100 text-frutilla-600">
+              <i data-lucide="heart" class="h-5 w-5" aria-hidden="true"></i>
+            </span>
+            <span class="text-sm leading-tight">
+              <span class="block font-semibold text-petroleo-800">Hecho a mano</span>
+              <span class="text-choco-600">en cada pedido</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LÍNEAS DE NEGOCIO ============ -->
+    <section id="servicios" class="bg-white py-20 lg:py-28" aria-labelledby="titulo-servicios">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase texto-etiqueta text-frutilla-600">Servicios</p>
+          <h2 id="titulo-servicios" class="mt-3 font-serif text-3xl font-semibold text-petroleo-800 sm:text-4xl">Una propuesta para cada ocasión</h2>
+          <p class="mt-4 text-choco-600">Desde el directorio de las 8:00 hasta la torta del domingo en familia, cuidamos cada detalle de principio a fin.</p>
+        </div>
+
+        <div class="mt-14 grid gap-8 md:grid-cols-3">
+          <article class="group flex flex-col overflow-hidden rounded-3xl bg-crema shadow-suave transition hover:-translate-y-1">
+            <div class="overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=75" alt="Barista sirviendo leche sobre un café de grano" width="800" height="560" loading="lazy" class="aspect-[10/7] w-full object-cover transition duration-500 group-hover:scale-105">
+            </div>
+            <div class="flex flex-1 flex-col p-7">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-petroleo text-white"><i data-lucide="briefcase" class="h-6 w-6" aria-hidden="true"></i></span>
+              <h3 class="mt-5 font-serif text-2xl font-semibold text-petroleo-800">Coffee Break Corporativo</h3>
+              <p class="mt-3 flex-1 text-choco-600">Reuniones de directorio, capacitaciones, inducciones y congresos. Café de grano, bocados dulces y salados, montaje puntual y retiro sin interrumpir tu jornada.</p>
+              <a href="#packs" class="mt-6 inline-flex items-center gap-2 font-semibold text-petroleo hover:text-frutilla-600">Ver packs <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-3xl bg-crema shadow-suave transition hover:-translate-y-1">
+            <div class="overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=800&q=75" alt="Torta rosada decorada con chorreado y chispas de colores" width="800" height="560" loading="lazy" class="aspect-[10/7] w-full object-cover transition duration-500 group-hover:scale-105">
+            </div>
+            <div class="flex flex-1 flex-col p-7">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-frutilla text-white"><i data-lucide="cake" class="h-6 w-6" aria-hidden="true"></i></span>
+              <h3 class="mt-5 font-serif text-2xl font-semibold text-petroleo-800">Repostería de Autor &amp; Tortas</h3>
+              <p class="mt-3 flex-1 text-choco-600">Tortas de novios, temáticas, tradicionales y personalizadas para cumpleaños, aniversarios y matrimonios. También postres en formato individual y dulcería artesanal.</p>
+              <a href="#reposteria" class="mt-6 inline-flex items-center gap-2 font-semibold text-petroleo hover:text-frutilla-600">Ver catálogo <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-3xl bg-crema shadow-suave transition hover:-translate-y-1">
+            <div class="overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=75" alt="Mesa de cóctel con bandejas de bocados salados" width="800" height="560" loading="lazy" class="aspect-[10/7] w-full object-cover transition duration-500 group-hover:scale-105">
+            </div>
+            <div class="flex flex-1 flex-col p-7">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-oro text-white"><i data-lucide="package" class="h-6 w-6" aria-hidden="true"></i></span>
+              <h3 class="mt-5 font-serif text-2xl font-semibold text-petroleo-800">Cóctel, Box Lunch &amp; Coffee Packs</h3>
+              <p class="mt-3 flex-1 text-choco-600">Bocados de cóctel para eventos y cajas individuales selladas, higiénicas y listas para repartir en actividades masivas, turnos o reuniones express.</p>
+              <a href="#cotizar" data-servicio="Cóctel / Box lunch / Coffee pack personal" class="btn-cotizar mt-6 inline-flex items-center gap-2 font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PACKS COFFEE BREAK ============ -->
+    <section id="packs" class="py-20 lg:py-28" aria-labelledby="titulo-packs">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase texto-etiqueta text-frutilla-600">Packs Coffee Break</p>
+          <h2 id="titulo-packs" class="mt-3 font-serif text-3xl font-semibold text-petroleo-800 sm:text-4xl">Elige el formato de tu pausa</h2>
+          <p class="mt-4 text-choco-600">Cada pack se ajusta a la cantidad de asistentes, al horario y a las restricciones alimentarias de tu equipo. Cotiza sin compromiso.</p>
+        </div>
+
+        <div class="mt-14 grid items-stretch gap-8 lg:grid-cols-3">
+          <!-- Pack Express -->
+          <article class="flex flex-col overflow-hidden rounded-3xl border border-crema-300 bg-white shadow-suave">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=75" alt="Croissants recién horneados" width="800" height="450" loading="lazy" class="aspect-video w-full object-cover">
+            <div class="flex flex-1 flex-col p-8">
+              <p class="text-xs font-semibold uppercase tracking-widest text-choco-600">Formato ágil</p>
+              <h3 class="mt-2 font-serif text-2xl font-semibold text-petroleo-800">Pack Básico / Express</h3>
+              <p class="mt-2 text-sm text-choco-600">Ideal para capacitaciones, inducciones y reuniones breves.</p>
+              <ul class="mt-6 flex-1 space-y-3 text-sm">
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Café filtrado en termo profesional</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Selección de té e infusiones</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Jugos naturales y agua</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Mini bollería dulce: medialunas, queques y galletas</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Descartables premium ecológicos</li>
+              </ul>
+              <a href="#cotizar" data-servicio="Pack Básico / Express" class="btn-cotizar mt-8 inline-flex items-center justify-center gap-2 rounded-full border-2 border-petroleo px-6 py-3 font-semibold text-petroleo transition hover:bg-petroleo hover:text-white">Cotizar este Pack</a>
+            </div>
+          </article>
+
+          <!-- Pack Ejecutivo -->
+          <article class="relative flex flex-col overflow-hidden rounded-3xl bg-petroleo text-white shadow-tarjeta ring-4 ring-oro/70 lg:-translate-y-4">
+            <span class="absolute right-5 top-5 z-10 inline-flex items-center gap-1 rounded-full bg-oro px-3 py-1 text-xs font-bold uppercase tracking-wider text-choco">
+              <i data-lucide="star" class="h-3.5 w-3.5" aria-hidden="true"></i> Más popular
+            </span>
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=75" alt="Sándwiches tostados con salsas para acompañar" width="800" height="450" loading="lazy" class="aspect-video w-full object-cover">
+            <div class="flex flex-1 flex-col p-8">
+              <p class="text-xs font-semibold uppercase tracking-widest text-oro-300">Equilibrio perfecto</p>
+              <h3 class="mt-2 font-serif text-2xl font-semibold">Pack Ejecutivo</h3>
+              <p class="mt-2 text-sm text-petroleo-50/90">Para reuniones de trabajo, comités y jornadas de media mañana o tarde.</p>
+              <ul class="mt-6 flex-1 space-y-3 text-sm">
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-oro-300" aria-hidden="true"></i>Café de grano recién preparado</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-oro-300" aria-hidden="true"></i>Variedad de sándwiches en pan tapapecho y croissant</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-oro-300" aria-hidden="true"></i>Mini dulces finos de la casa</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-oro-300" aria-hidden="true"></i>Brochetas de fruta de temporada</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-oro-300" aria-hidden="true"></i>Té, infusiones, jugos y agua</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-oro-300" aria-hidden="true"></i>Montaje de mesa con mantelería</li>
+              </ul>
+              <a href="#cotizar" data-servicio="Pack Ejecutivo" class="btn-cotizar mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-oro px-6 py-3 font-semibold text-choco transition hover:bg-oro-300">Cotizar este Pack</a>
+            </div>
+          </article>
+
+          <!-- Pack Premium -->
+          <article class="flex flex-col overflow-hidden rounded-3xl border border-crema-300 bg-white shadow-suave">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=75" alt="Mesa elegante servida para un evento ejecutivo" width="800" height="450" loading="lazy" class="aspect-video w-full object-cover">
+            <div class="flex flex-1 flex-col p-8">
+              <p class="text-xs font-semibold uppercase tracking-widest text-choco-600">Experiencia completa</p>
+              <h3 class="mt-2 font-serif text-2xl font-semibold text-petroleo-800">Pack Premium / Directorio</h3>
+              <p class="mt-2 text-sm text-choco-600">Para directorios, visitas de clientes, lanzamientos y congresos.</p>
+              <ul class="mt-6 flex-1 space-y-3 text-sm">
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Atención de garzón incluida</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Tabla de quesos y frutos secos</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Pastelería de autor en formato individual</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Jugos prensados en frío</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Café de grano e infusiones premium</li>
+                <li class="flex gap-3"><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Vajilla, cristalería y montaje decorado</li>
+              </ul>
+              <a href="#cotizar" data-servicio="Pack Premium / Directorio" class="btn-cotizar mt-8 inline-flex items-center justify-center gap-2 rounded-full border-2 border-petroleo px-6 py-3 font-semibold text-petroleo transition hover:bg-petroleo hover:text-white">Cotizar este Pack</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO REPOSTERÍA ============ -->
+    <section id="reposteria" class="bg-white py-20 lg:py-28" aria-labelledby="titulo-reposteria">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="font-script text-4xl text-frutilla-600">Dulcería artesanal</p>
+          <h2 id="titulo-reposteria" class="mt-1 font-serif text-3xl font-semibold text-petroleo-800 sm:text-4xl">Catálogo de repostería</h2>
+          <p class="mt-4 text-choco-600">Cada torta se hace por encargo, con ingredientes frescos y el diseño que imaginas. Filtra por categoría y cotiza la tuya.</p>
+        </div>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-2" role="group" aria-label="Filtrar catálogo">
+          <button type="button" class="filtro rounded-full border border-petroleo/30 px-5 py-2 text-sm font-semibold transition" data-filtro="todos" aria-pressed="true">Todo</button>
+          <button type="button" class="filtro rounded-full border border-petroleo/30 px-5 py-2 text-sm font-semibold transition" data-filtro="novios" aria-pressed="false">Tortas de novios</button>
+          <button type="button" class="filtro rounded-full border border-petroleo/30 px-5 py-2 text-sm font-semibold transition" data-filtro="tematicas" aria-pressed="false">Temáticas</button>
+          <button type="button" class="filtro rounded-full border border-petroleo/30 px-5 py-2 text-sm font-semibold transition" data-filtro="tradicionales" aria-pressed="false">Tradicionales</button>
+          <button type="button" class="filtro rounded-full border border-petroleo/30 px-5 py-2 text-sm font-semibold transition" data-filtro="personalizadas" aria-pressed="false">Personalizadas y decoradas</button>
+          <button type="button" class="filtro rounded-full border border-petroleo/30 px-5 py-2 text-sm font-semibold transition" data-filtro="dulceria" aria-pressed="false">Dulcería</button>
+          <button type="button" class="filtro rounded-full border border-petroleo/30 px-5 py-2 text-sm font-semibold transition" data-filtro="coctel" aria-pressed="false">Cóctel</button>
+        </div>
+
+        <p id="estado-filtro" class="sr-only" aria-live="polite"></p>
+
+        <ul id="catalogo" class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="item-catalogo" data-cat="novios">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=700&q=75" alt="Torta de novios blanca de tres pisos con rosas naturales" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Tortas de novios</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Torta de novios Jardín de Rosas</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Pisos de bizcocho de vainilla con manjar y frambuesa, cubierta de crema suave y flores naturales.</p>
+                <a href="#cotizar" data-servicio="Torta de novios" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="novios">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=700&q=75" alt="Torta blanca de dos pisos coronada con frutos rojos" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Tortas de novios</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Torta de novios Frutos del Bosque</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Dos pisos de bizcocho blanco, crema chantilly y frutos rojos frescos. Elegante y liviana.</p>
+                <a href="#cotizar" data-servicio="Torta de novios" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="tematicas">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=75" alt="Torta arcoíris con chispas de colores y estrellas" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Temáticas</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Torta Arcoíris de Cumpleaños</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Capas de colores, relleno de crema de vainilla y decoración a elección según la temática del cumpleaños.</p>
+                <a href="#cotizar" data-servicio="Torta temática" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="tematicas">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=700&q=75" alt="Torta rosada con chorreado, merengues y cerezas" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Temáticas</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Torta Fiesta Rosa</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Chorreado de chocolate blanco, merengues y cerezas. Perfecta para baby showers y celebraciones infantiles.</p>
+                <a href="#cotizar" data-servicio="Torta temática" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="tradicionales">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=75" alt="Torta de chocolate con ganache y rosetas de crema" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Tradicionales</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Torta Chocolate Intenso</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Bizcocho húmedo de cacao, relleno de manjar y ganache de chocolate semiamargo.</p>
+                <a href="#cotizar" data-servicio="Torta tradicional" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="tradicionales">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=700&q=75" alt="Porción de torta de hojas con crema y chocolate" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Tradicionales</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Torta Mil Hojas con Manjar</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">La clásica chilena: hojarasca crujiente, abundante manjar y crema pastelera. Opción con nueces.</p>
+                <a href="#cotizar" data-servicio="Torta tradicional" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="tradicionales">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=700&q=75" alt="Torta selva negra con cerezas y chocolate" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Tradicionales</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Torta Selva Negra</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Bizcocho de chocolate, crema, cerezas al marrasquino y virutas de chocolate.</p>
+                <a href="#cotizar" data-servicio="Torta tradicional" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="personalizadas">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=700&q=75" alt="Torta decorada con chorreado rosado y chispas" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Personalizadas y decoradas</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Drip Cake Personalizada</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Elige colores, sabores, topper y mensaje. Diseñamos contigo cada detalle de la decoración.</p>
+                <a href="#cotizar" data-servicio="Torta personalizada / decorada" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="personalizadas">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?auto=format&fit=crop&w=700&q=75" alt="Torta alta rayada en tonos rosados con decoración fina" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Personalizadas y decoradas</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Torta Alta Decorada</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Formato alto con franjas de crema, macarons y detalles comestibles a tono con tu celebración.</p>
+                <a href="#cotizar" data-servicio="Torta personalizada / decorada" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="dulceria">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=700&q=75" alt="Fila de cupcakes con crema turquesa y chispas" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Dulcería</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Cupcakes Decorados</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Por docena, con frosting en los colores de tu evento. Ideales para mesas dulces y regalos.</p>
+                <a href="#cotizar" data-servicio="Dulcería artesanal" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="dulceria">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1611293388250-580b08c4a145?auto=format&fit=crop&w=700&q=75" alt="Postre individual de frutillas con crema" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Dulcería</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Postres Individuales</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Mini tortas, tartaletas y vasitos de panna cotta con frutillas. Formato perfecto para eventos.</p>
+                <a href="#cotizar" data-servicio="Dulcería artesanal" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="dulceria">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&w=700&q=75" alt="Tartaletas de frutos rojos con masa enrejada" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Dulcería</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Tartaletas de Frutos Rojos</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Masa quebrada casera rellena de frutos rojos. Disponibles en tamaño familiar e individual.</p>
+                <a href="#cotizar" data-servicio="Dulcería artesanal" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="coctel">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=700&q=75" alt="Bandejas variadas de bocados salados para cóctel" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Cóctel</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Cóctel Salado</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Canapés, empanaditas, brochetas y mini sándwiches para inauguraciones, lanzamientos y celebraciones.</p>
+                <a href="#cotizar" data-servicio="Cóctel / Box lunch / Coffee pack personal" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="coctel">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=700&q=75" alt="Sándwich gourmet con jamón, queso y lechuga" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Cóctel</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Box Lunch Sellado</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Caja individual con sándwich gourmet, fruta, snack dulce y bebida. Higiénica y lista para repartir.</p>
+                <a href="#cotizar" data-servicio="Cóctel / Box lunch / Coffee pack personal" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+          <li class="item-catalogo" data-cat="coctel">
+            <article class="flex h-full flex-col overflow-hidden rounded-3xl bg-crema shadow-suave">
+              <img src="https://images.unsplash.com/photo-1464195244916-405fa0a82545?auto=format&fit=crop&w=700&q=75" alt="Canasta de galletas artesanales con chips de chocolate" width="700" height="525" loading="lazy" class="aspect-[4/3] w-full object-cover">
+              <div class="flex flex-1 flex-col p-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-frutilla-600">Cóctel</span>
+                <h3 class="mt-2 font-serif text-xl font-semibold text-petroleo-800">Cóctel Dulce</h3>
+                <p class="mt-2 flex-1 text-sm text-choco-600">Galletas artesanales, alfajores, brownies y mini postres para cerrar tu evento con broche de oro.</p>
+                <a href="#cotizar" data-servicio="Cóctel / Box lunch / Coffee pack personal" class="btn-cotizar mt-5 inline-flex items-center gap-2 text-sm font-semibold text-petroleo hover:text-frutilla-600">Cotizar <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section id="galeria" class="py-20 lg:py-28" aria-labelledby="titulo-galeria">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase texto-etiqueta text-frutilla-600">Muestrario</p>
+          <h2 id="titulo-galeria" class="mt-3 font-serif text-3xl font-semibold text-petroleo-800 sm:text-4xl">Montajes y creaciones</h2>
+          <p class="mt-4 text-choco-600">Toca una imagen para verla en grande.</p>
+        </div>
+
+        <ul class="mt-12 grid auto-rows-[160px] grid-flow-dense grid-cols-2 gap-4 sm:auto-rows-[200px] md:grid-cols-4">
+          <li class="col-span-2 row-span-2">
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1600&q=80" data-alt="Mesa larga montada con mantel blanco y arreglos florales">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=75" alt="Mesa larga montada con mantel blanco y arreglos florales" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+              <span class="absolute inset-0 bg-gradient-to-t from-petroleo-800/60 to-transparent opacity-0 transition group-hover:opacity-100" aria-hidden="true"></span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1600&q=80" data-alt="Café de grano recién molido junto a una cafetera">
+              <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=75" alt="Café de grano recién molido junto a una cafetera" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1600&q=80" data-alt="Vasitos de panna cotta con frutillas frescas">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=75" alt="Vasitos de panna cotta con frutillas frescas" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            </button>
+          </li>
+          <li class="row-span-2">
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=1600&q=80" data-alt="Torta rosada con cerezas sobre base alta">
+              <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=600&q=75" alt="Torta rosada con cerezas sobre base alta" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            </button>
+          </li>
+          <li class="row-span-2">
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=1600&q=80" data-alt="Sándwich gourmet de jamón, queso y verduras">
+              <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=75" alt="Sándwich gourmet de jamón, queso y verduras" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            </button>
+          </li>
+          <li class="row-span-2">
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80" data-alt="Personas brindando con tazas de café durante una pausa">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=75" alt="Personas brindando con tazas de café durante una pausa" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=1600&q=80" data-alt="Brownie con helado y salsa de chocolate">
+              <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=600&q=75" alt="Brownie con helado y salsa de chocolate" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            </button>
+          </li>
+          <li class="col-span-2">
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80" data-alt="Equipo de trabajo reunido alrededor de una mesa">
+              <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=75" alt="Equipo de trabajo reunido alrededor de una mesa" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="galeria-item group relative block h-full w-full overflow-hidden rounded-3xl" data-src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1600&q=80" data-alt="Crepes rellenos con crema y frutillas">
+              <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=75" alt="Crepes rellenos con crema y frutillas" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <dialog id="visor" class="m-auto w-[min(92vw,1100px)] max-w-none overflow-visible bg-transparent p-0" aria-label="Imagen ampliada">
+        <div class="relative">
+          <img id="visor-img" src="data:," alt="" class="max-h-[80vh] w-full rounded-2xl object-contain">
+          <p id="visor-texto" class="mt-3 text-center text-sm text-white"></p>
+          <button type="button" id="visor-cerrar" class="absolute -top-4 right-0 inline-flex h-11 w-11 -translate-y-full items-center justify-center rounded-full bg-white text-petroleo shadow-suave sm:-right-4 sm:top-0 sm:translate-x-full sm:translate-y-0" aria-label="Cerrar imagen">
+            <i data-lucide="x" class="h-5 w-5" aria-hidden="true"></i>
+          </button>
+          <button type="button" id="visor-prev" class="absolute left-2 top-1/2 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-petroleo shadow-suave" aria-label="Imagen anterior">
+            <i data-lucide="chevron-left" class="h-5 w-5" aria-hidden="true"></i>
+          </button>
+          <button type="button" id="visor-sig" class="absolute right-2 top-1/2 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-petroleo shadow-suave" aria-label="Imagen siguiente">
+            <i data-lucide="chevron-right" class="h-5 w-5" aria-hidden="true"></i>
+          </button>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- ============ DIFERENCIALES ============ -->
+    <section id="diferenciales" class="bg-petroleo py-20 text-white lg:py-28" aria-labelledby="titulo-diferenciales">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase texto-etiqueta text-oro-300">Por qué elegirnos</p>
+          <h2 id="titulo-diferenciales" class="mt-3 font-serif text-3xl font-semibold sm:text-4xl">Pensado para Antofagasta</h2>
+          <p class="mt-4 text-petroleo-50/90">Conocemos el clima, las distancias y las exigencias de las empresas de la región.</p>
+        </div>
+
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-oro text-choco"><i data-lucide="thermometer-sun" class="h-6 w-6" aria-hidden="true"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-semibold">Transporte térmico</h3>
+            <p class="mt-3 text-sm leading-relaxed text-petroleo-50/90">Traslado en contenedores térmicos que protegen cremas, chocolates y bebidas del sol y la humedad costera.</p>
+          </article>
+          <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-oro text-choco"><i data-lucide="file-text" class="h-6 w-6" aria-hidden="true"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-semibold">Factura y orden de compra</h3>
+            <p class="mt-3 text-sm leading-relaxed text-petroleo-50/90">Emitimos factura electrónica y trabajamos con orden de compra para mineras, contratistas e instituciones.</p>
+          </article>
+          <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-oro text-choco"><i data-lucide="wheat-off" class="h-6 w-6" aria-hidden="true"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-semibold">Opciones dietarias</h3>
+            <p class="mt-3 text-sm leading-relaxed text-petroleo-50/90">Alternativas sin azúcar, veganas y sin gluten para que todo tu equipo o familia disfrute por igual.</p>
+          </article>
+          <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-oro text-choco"><i data-lucide="clock" class="h-6 w-6" aria-hidden="true"></i></span>
+            <h3 class="mt-5 font-serif text-xl font-semibold">Puntualidad milimétrica</h3>
+            <p class="mt-3 text-sm leading-relaxed text-petroleo-50/90">Llegamos con anticipación para montar antes de que empiece tu reunión, y retiramos sin interrumpir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COBERTURA ============ -->
+    <section id="cobertura" class="py-20 lg:py-28" aria-labelledby="titulo-cobertura">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div>
+          <p class="text-xs font-semibold uppercase texto-etiqueta text-frutilla-600">Zonas de cobertura</p>
+          <h2 id="titulo-cobertura" class="mt-3 font-serif text-3xl font-semibold text-petroleo-800 sm:text-4xl">Llegamos a todo Antofagasta</h2>
+          <p class="mt-4 text-choco-600">Trabajamos solo por encargo, sin local de atención al público. Puedes elegir despacho a tu oficina, faena o domicilio, o bien retiro coordinado previamente.</p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="flex gap-4 rounded-2xl bg-white p-5 shadow-sm">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-petroleo-50 text-petroleo"><i data-lucide="truck" class="h-5 w-5" aria-hidden="true"></i></span>
+              <div>
+                <h3 class="font-semibold text-petroleo-800">Delivery</h3>
+                <p class="mt-1 text-sm text-choco-600">Despacho a cualquier sector de la ciudad. El costo se informa en tu cotización.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 rounded-2xl bg-white p-5 shadow-sm">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-frutilla-100 text-frutilla-600"><i data-lucide="gift" class="h-5 w-5" aria-hidden="true"></i></span>
+              <div>
+                <h3 class="font-semibold text-petroleo-800">Retiro coordinado</h3>
+                <p class="mt-1 text-sm text-choco-600">Coordinamos día, hora y punto de entrega al confirmar tu pedido.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-[2rem] bg-white p-8 shadow-suave">
+          <h3 class="font-serif text-xl font-semibold text-petroleo-800">Sectores que atendemos</h3>
+          <ul class="mt-6 grid grid-cols-2 gap-3 text-sm">
+            <li class="flex items-center gap-2 rounded-xl bg-crema px-4 py-3"><i data-lucide="map-pin" class="h-4 w-4 text-frutilla-600" aria-hidden="true"></i>Sector Norte</li>
+            <li class="flex items-center gap-2 rounded-xl bg-crema px-4 py-3"><i data-lucide="map-pin" class="h-4 w-4 text-frutilla-600" aria-hidden="true"></i>Centro</li>
+            <li class="flex items-center gap-2 rounded-xl bg-crema px-4 py-3"><i data-lucide="map-pin" class="h-4 w-4 text-frutilla-600" aria-hidden="true"></i>Sector Sur</li>
+            <li class="flex items-center gap-2 rounded-xl bg-crema px-4 py-3"><i data-lucide="map-pin" class="h-4 w-4 text-frutilla-600" aria-hidden="true"></i>Costanera y playas</li>
+            <li class="flex items-center gap-2 rounded-xl bg-crema px-4 py-3"><i data-lucide="map-pin" class="h-4 w-4 text-frutilla-600" aria-hidden="true"></i>La Portada</li>
+            <li class="flex items-center gap-2 rounded-xl bg-crema px-4 py-3"><i data-lucide="map-pin" class="h-4 w-4 text-frutilla-600" aria-hidden="true"></i>Sector Alto</li>
+          </ul>
+          <p class="mt-6 flex gap-3 rounded-2xl border border-oro/40 bg-oro/10 p-4 text-sm text-choco">
+            <i data-lucide="building-2" class="mt-0.5 h-5 w-5 shrink-0 text-oro" aria-hidden="true"></i>
+            <span>¿Tu evento es en Sector La Negra o en una faena fuera del radio urbano? Escríbenos y revisamos disponibilidad y condiciones de despacho.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="bg-white py-20 lg:py-28" aria-labelledby="titulo-faq">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-xs font-semibold uppercase texto-etiqueta text-frutilla-600">Preguntas frecuentes</p>
+          <h2 id="titulo-faq" class="mt-3 font-serif text-3xl font-semibold text-petroleo-800 sm:text-4xl">Resolvemos tus dudas</h2>
+        </div>
+
+        <div class="mt-12 space-y-4">
+          <div class="faq-item rounded-2xl border border-crema-300 bg-crema" data-abierto="false">
+            <h3>
+              <button type="button" class="faq-boton flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-petroleo-800" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
+                ¿Con cuánta anticipación debo hacer mi pedido?
+                <i data-lucide="chevron-down" class="faq-icono h-5 w-5 shrink-0 transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-1" class="faq-panel" role="region" aria-labelledby="faq-btn-1" data-abierto="false">
+              <div><p class="px-6 pb-6 text-choco-600">Para coffee break y cóctel recomendamos al menos 48 horas. Para tortas tradicionales, temáticas y personalizadas, de 5 a 7 días. Las tortas de novios se reservan con 3 a 4 semanas de anticipación. Si tu pedido es urgente, escríbenos igual y revisamos disponibilidad.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl border border-crema-300 bg-crema" data-abierto="false">
+            <h3>
+              <button type="button" class="faq-boton flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-petroleo-800" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
+                ¿Cuáles son las formas de pago? ¿Trabajan con orden de compra?
+                <i data-lucide="chevron-down" class="faq-icono h-5 w-5 shrink-0 transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-2" class="faq-panel" role="region" aria-labelledby="faq-btn-2" data-abierto="false">
+              <div><p class="px-6 pb-6 text-choco-600">Aceptamos transferencia bancaria. Para particulares, la fecha se reserva con un abono y el saldo se cancela antes de la entrega. Para empresas e instituciones trabajamos con orden de compra y emitimos factura electrónica; las condiciones de pago se acuerdan en la cotización.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl border border-crema-300 bg-crema" data-abierto="false">
+            <h3>
+              <button type="button" class="faq-boton flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-petroleo-800" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
+                ¿El montaje incluye vajilla o es descartable?
+                <i data-lucide="chevron-down" class="faq-icono h-5 w-5 shrink-0 transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-3" class="faq-panel" role="region" aria-labelledby="faq-btn-3" data-abierto="false">
+              <div><p class="px-6 pb-6 text-choco-600">Tienes dos alternativas: montaje con vajilla, cristalería y mantelería, que retiramos al finalizar, o descartables premium ecológicos, más prácticos para eventos masivos. El Pack Premium incluye vajilla y atención de garzón.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl border border-crema-300 bg-crema" data-abierto="false">
+            <h3>
+              <button type="button" class="faq-boton flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-petroleo-800" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
+                ¿A qué zonas despachan y cuánto cuesta?
+                <i data-lucide="chevron-down" class="faq-icono h-5 w-5 shrink-0 transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-4" class="faq-panel" role="region" aria-labelledby="faq-btn-4" data-abierto="false">
+              <div><p class="px-6 pb-6 text-choco-600">Despachamos en todo Antofagasta. El valor depende del sector y del tamaño del pedido, y siempre va detallado en tu cotización. Si lo prefieres, puedes optar por retiro coordinado sin costo. Para Sector La Negra o faenas fuera de la ciudad, consúltanos.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-2xl border border-crema-300 bg-crema" data-abierto="false">
+            <h3>
+              <button type="button" class="faq-boton flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-petroleo-800" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
+                ¿Tienen opciones sin azúcar, veganas o sin gluten?
+                <i data-lucide="chevron-down" class="faq-icono h-5 w-5 shrink-0 transition-transform" aria-hidden="true"></i>
+              </button>
+            </h3>
+            <div id="faq-5" class="faq-panel" role="region" aria-labelledby="faq-btn-5" data-abierto="false">
+              <div><p class="px-6 pb-6 text-choco-600">Sí. Indícanos en el formulario cuántas personas requieren cada opción y adaptamos el menú. Trabajamos con cuidado para evitar contaminación cruzada, aunque no somos una cocina exclusiva libre de gluten.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMULARIO COTIZAR ============ -->
+    <section id="cotizar" class="relative overflow-hidden py-20 lg:py-28" aria-labelledby="titulo-cotizar">
+      <div class="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-frutilla-100 blur-3xl" aria-hidden="true"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-5 lg:px-8">
+        <div class="lg:col-span-2">
+          <p class="font-script text-4xl text-frutilla-600">Conversemos</p>
+          <h2 id="titulo-cotizar" class="mt-1 font-serif text-3xl font-semibold text-petroleo-800 sm:text-4xl">Solicita tu cotización</h2>
+          <p class="mt-4 text-choco-600">Cuéntanos qué necesitas y te respondemos por correo con una propuesta a tu medida. Sin compromiso.</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li class="flex gap-3"><i data-lucide="circle-check" class="h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Respuesta dentro de 24 horas hábiles.</li>
+            <li class="flex gap-3"><i data-lucide="circle-check" class="h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Cotización con detalle de despacho incluido.</li>
+            <li class="flex gap-3"><i data-lucide="circle-check" class="h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Factura electrónica para empresas.</li>
+            <li class="flex gap-3"><i data-lucide="shield-check" class="h-5 w-5 shrink-0 text-petroleo" aria-hidden="true"></i>Tus datos solo se usan para responder tu solicitud.</li>
+          </ul>
+
+          <div class="mt-10 rounded-3xl bg-white p-6 shadow-suave">
+            <p class="text-sm font-semibold text-petroleo-800">¿Prefieres ver más trabajos?</p>
+            <a href="https://www.instagram.com/dulcetiberia/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 font-semibold text-frutilla-600 hover:underline">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @dulcetiberia
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3">
+          <form id="form-cotizar" class="rounded-[2rem] bg-white p-6 shadow-tarjeta sm:p-10" novalidate>
+            <fieldset>
+              <legend class="text-sm font-semibold text-petroleo-800">Tipo de cliente</legend>
+              <div class="mt-3 grid grid-cols-2 gap-3">
+                <label class="flex cursor-pointer items-center gap-3 rounded-xl border border-crema-300 px-4 py-3 has-[:checked]:border-petroleo has-[:checked]:bg-petroleo-50">
+                  <input type="radio" name="tipo_cliente" value="Empresa" class="h-4 w-4 accent-[#255C7B]" checked>
+                  <span class="flex items-center gap-2 text-sm font-medium"><i data-lucide="building-2" class="h-4 w-4" aria-hidden="true"></i>Empresa</span>
+                </label>
+                <label class="flex cursor-pointer items-center gap-3 rounded-xl border border-crema-300 px-4 py-3 has-[:checked]:border-petroleo has-[:checked]:bg-petroleo-50">
+                  <input type="radio" name="tipo_cliente" value="Particular" class="h-4 w-4 accent-[#255C7B]">
+                  <span class="flex items-center gap-2 text-sm font-medium"><i data-lucide="heart" class="h-4 w-4" aria-hidden="true"></i>Particular</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div id="campos-empresa" class="mt-6 grid gap-5 sm:grid-cols-2">
+              <div>
+                <label for="razon_social" class="text-sm font-semibold text-petroleo-800">Empresa o institución <span class="text-frutilla-600" aria-hidden="true">*</span></label>
+                <input id="razon_social" name="razon_social" type="text" class="campo mt-2" maxlength="100" autocomplete="organization" aria-describedby="err-razon_social">
+                <p id="err-razon_social" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+              </div>
+              <div>
+                <label for="rut" class="text-sm font-semibold text-petroleo-800">RUT empresa <span class="font-normal text-choco-600">(para factura)</span></label>
+                <input id="rut" name="rut" type="text" class="campo mt-2" maxlength="12" placeholder="76.123.456-0" inputmode="text" autocomplete="off" aria-describedby="err-rut">
+                <p id="err-rut" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+              </div>
+            </div>
+
+            <div class="mt-2 grid gap-5 sm:grid-cols-2">
+              <div>
+                <label for="nombre" class="text-sm font-semibold text-petroleo-800">Nombre y apellido <span class="text-frutilla-600" aria-hidden="true">*</span></label>
+                <input id="nombre" name="nombre" type="text" class="campo mt-2" required maxlength="80" autocomplete="name" aria-describedby="err-nombre">
+                <p id="err-nombre" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+              </div>
+              <div>
+                <label for="email" class="text-sm font-semibold text-petroleo-800">Correo electrónico <span class="text-frutilla-600" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" class="campo mt-2" required maxlength="120" autocomplete="email" aria-describedby="err-email">
+                <p id="err-email" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+              </div>
+              <div>
+                <label for="telefono" class="text-sm font-semibold text-petroleo-800">Teléfono <span class="font-normal text-choco-600">(opcional)</span></label>
+                <input id="telefono" name="telefono" type="tel" class="campo mt-2" maxlength="16" placeholder="+56 9 1234 5678" autocomplete="tel" aria-describedby="err-telefono">
+                <p id="err-telefono" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+              </div>
+              <div>
+                <label for="servicio" class="text-sm font-semibold text-petroleo-800">Servicio <span class="text-frutilla-600" aria-hidden="true">*</span></label>
+                <select id="servicio" name="servicio" class="campo mt-2" required aria-describedby="err-servicio">
+                  <option value="">Selecciona una opción</option>
+                  <optgroup label="Coffee break">
+                    <option>Pack Básico / Express</option>
+                    <option>Pack Ejecutivo</option>
+                    <option>Pack Premium / Directorio</option>
+                    <option>Coffee break corporativo</option>
+                    <option>Cóctel / Box lunch / Coffee pack personal</option>
+                  </optgroup>
+                  <optgroup label="Repostería">
+                    <option>Torta de novios</option>
+                    <option>Torta temática</option>
+                    <option>Torta tradicional</option>
+                    <option>Torta personalizada / decorada</option>
+                    <option>Dulcería artesanal</option>
+                  </optgroup>
+                  <option>Otro</option>
+                </select>
+                <p id="err-servicio" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+              </div>
+              <div>
+                <label for="fecha" class="text-sm font-semibold text-petroleo-800">Fecha del evento <span class="text-frutilla-600" aria-hidden="true">*</span></label>
+                <input id="fecha" name="fecha" type="date" class="campo mt-2" required aria-describedby="err-fecha ayuda-fecha">
+                <p id="ayuda-fecha" class="mt-1 text-xs text-choco-600">Mínimo 48 horas de anticipación.</p>
+                <p id="err-fecha" class="min-h-[1.25rem] text-xs text-frutilla-600"></p>
+              </div>
+              <div>
+                <label for="personas" class="text-sm font-semibold text-petroleo-800">N.º de personas o porciones <span class="text-frutilla-600" aria-hidden="true">*</span></label>
+                <input id="personas" name="personas" type="number" class="campo mt-2" required min="1" max="2000" step="1" inputmode="numeric" aria-describedby="err-personas">
+                <p id="err-personas" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+              </div>
+            </div>
+
+            <fieldset class="mt-2">
+              <legend class="text-sm font-semibold text-petroleo-800">Entrega</legend>
+              <div class="mt-3 grid grid-cols-2 gap-3">
+                <label class="flex cursor-pointer items-center gap-3 rounded-xl border border-crema-300 px-4 py-3 has-[:checked]:border-petroleo has-[:checked]:bg-petroleo-50">
+                  <input type="radio" name="entrega" value="Delivery" class="h-4 w-4 accent-[#255C7B]" checked>
+                  <span class="text-sm font-medium">Delivery</span>
+                </label>
+                <label class="flex cursor-pointer items-center gap-3 rounded-xl border border-crema-300 px-4 py-3 has-[:checked]:border-petroleo has-[:checked]:bg-petroleo-50">
+                  <input type="radio" name="entrega" value="Retiro coordinado" class="h-4 w-4 accent-[#255C7B]">
+                  <span class="text-sm font-medium">Retiro coordinado</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="mt-5">
+              <label for="sector" class="text-sm font-semibold text-petroleo-800">Sector de Antofagasta <span class="font-normal text-choco-600">(opcional, no necesitamos la dirección exacta)</span></label>
+              <input id="sector" name="sector" type="text" class="campo mt-2" maxlength="60" placeholder="Ej.: Sector Sur, Centro, La Negra" aria-describedby="err-sector">
+              <p id="err-sector" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+            </div>
+
+            <div>
+              <label for="mensaje" class="text-sm font-semibold text-petroleo-800">Cuéntanos más <span class="font-normal text-choco-600">(sabores, diseño, horario, restricciones alimentarias)</span></label>
+              <textarea id="mensaje" name="mensaje" rows="5" class="campo mt-2 resize-y" maxlength="1200" aria-describedby="err-mensaje contador-mensaje"></textarea>
+              <div class="mt-1 flex justify-between gap-4 text-xs">
+                <p id="err-mensaje" class="text-frutilla-600"></p>
+                <p id="contador-mensaje" class="shrink-0 text-choco-600">0 / 1200</p>
+              </div>
+            </div>
+
+            <!-- Campo trampa antispam: invisible para personas, los bots lo completan -->
+            <div class="trampa" aria-hidden="true">
+              <label for="botcheck">No completar este campo</label>
+              <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="mt-5">
+              <label class="flex items-start gap-3 text-sm text-choco-600">
+                <input id="acepto" name="acepto" type="checkbox" class="mt-0.5 h-4 w-4 shrink-0 accent-[#255C7B]" required aria-describedby="err-acepto">
+                <span>Acepto que DulceTiberia use estos datos solo para responder mi solicitud de cotización.</span>
+              </label>
+              <p id="err-acepto" class="mt-1 min-h-[1.25rem] text-xs text-frutilla-600"></p>
+            </div>
+
+            <button id="btn-enviar" type="submit" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-petroleo px-8 py-4 font-semibold text-white shadow-tarjeta transition hover:bg-petroleo-700 disabled:cursor-not-allowed disabled:opacity-60">
+              <i data-lucide="send" class="icono-enviar h-5 w-5" aria-hidden="true"></i>
+              <i data-lucide="loader" class="icono-cargando oculto h-5 w-5 animate-spin" aria-hidden="true"></i>
+              <span class="texto-enviar">Enviar solicitud</span>
+            </button>
+
+            <div id="estado-form" class="mt-5 hidden rounded-2xl p-4 text-sm" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-petroleo-800 text-petroleo-50">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.webp" alt="" width="56" height="56" class="h-14 w-14 rounded-full object-cover">
+          <span class="font-script text-3xl text-white">Dulce Tiberia</span>
+        </div>
+        <p class="mt-4 max-w-xs text-sm leading-relaxed text-petroleo-50/80">Coffee break corporativo, cóctel y repostería artesanal hecha por encargo en Antofagasta, Chile.</p>
+      </div>
+
+      <nav aria-label="Enlaces del pie de página">
+        <h2 class="text-xs font-semibold uppercase texto-etiqueta text-oro-300">Explora</h2>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#servicios" class="hover:text-white hover:underline">Servicios</a></li>
+          <li><a href="#packs" class="hover:text-white hover:underline">Packs Coffee Break</a></li>
+          <li><a href="#reposteria" class="hover:text-white hover:underline">Repostería</a></li>
+          <li><a href="#cobertura" class="hover:text-white hover:underline">Zonas de cobertura</a></li>
+          <li><a href="#faq" class="hover:text-white hover:underline">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="text-xs font-semibold uppercase texto-etiqueta text-oro-300">Contacto</h2>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li>
+            <a href="https://www.instagram.com/dulcetiberia/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white hover:underline">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @dulcetiberia
+            </a>
+          </li>
+          <li><a href="#cotizar" class="inline-flex items-center gap-2 hover:text-white hover:underline"><i data-lucide="mail" class="h-4 w-4" aria-hidden="true"></i>Formulario de cotización</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="map-pin" class="h-4 w-4" aria-hidden="true"></i>Antofagasta, Chile</li>
+          <li class="flex items-start gap-2"><i data-lucide="truck" class="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true"></i>Atención solo por encargo: delivery o retiro coordinado.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <p class="mx-auto max-w-7xl px-4 py-6 text-center text-xs text-petroleo-50/70 sm:px-6 lg:px-8">© <span id="anio">2026</span> DulceTiberia Repostería. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BOTÓN FLOTANTE INSTAGRAM ============ -->
+  <a href="https://www.instagram.com/dulcetiberia/" target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white shadow-tarjeta transition hover:scale-110 sm:bottom-8 sm:right-8 sm:h-16 sm:w-16" aria-label="Síguenos en Instagram @dulcetiberia (se abre en una pestaña nueva)">
+    <svg class="h-7 w-7 sm:h-8 sm:w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  </a>
+
+  <script src="https://unpkg.com/lucide@1.48.0/dist/umd/lucide.min.js" integrity="sha384-Hh7C333mXel+qppGoFs4qAOXp7h67eur4XsQVF2bvHAM3MQ4DX4cQI7oRCzb98J4" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---------- Configuración ----------
+         Clave pública de Web3Forms. Es segura de publicar: solo permite enviar
+         mensajes al correo registrado, que nunca aparece en esta página. */
+      var WEB3FORMS_ACCESS_KEY = 'ec692ef3-06bb-4a97-8e9d-a045e04388e2';
+      var WEB3FORMS_URL = 'https://api.web3forms.com/submit';
+
+      if (window.lucide) { window.lucide.createIcons(); }
+
+      var anio = document.getElementById('anio');
+      if (anio) { anio.textContent = String(new Date().getFullYear()); }
+
+      /* ---------- Header con sombra al hacer scroll ---------- */
+      var encabezado = document.getElementById('encabezado');
+      function actualizarHeader() {
+        var conSombra = window.scrollY > 8;
+        encabezado.classList.toggle('shadow-suave', conSombra);
+        encabezado.classList.toggle('border-crema-300', conSombra);
+      }
+      window.addEventListener('scroll', actualizarHeader, { passive: true });
+      actualizarHeader();
+
+      /* ---------- Menú móvil ---------- */
+      var btnMenu = document.getElementById('btn-menu');
+      var menuMovil = document.getElementById('menu-movil');
+      function setMenu(abierto) {
+        menuMovil.classList.toggle('oculto', !abierto);
+        btnMenu.setAttribute('aria-expanded', String(abierto));
+        btnMenu.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+        btnMenu.querySelector('.icono-abrir').classList.toggle('oculto', abierto);
+        btnMenu.querySelector('.icono-cerrar').classList.toggle('oculto', !abierto);
+      }
+      btnMenu.addEventListener('click', function () {
+        setMenu(btnMenu.getAttribute('aria-expanded') !== 'true');
+      });
+      menuMovil.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { setMenu(false); });
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && btnMenu.getAttribute('aria-expanded') === 'true') {
+          setMenu(false);
+          btnMenu.focus();
+        }
+      });
+      window.matchMedia('(min-width: 1024px)').addEventListener('change', function (mq) {
+        if (mq.matches) { setMenu(false); }
+      });
+
+      /* ---------- Filtros del catálogo ---------- */
+      var filtros = document.querySelectorAll('.filtro');
+      var items = document.querySelectorAll('.item-catalogo');
+      var estadoFiltro = document.getElementById('estado-filtro');
+      function aplicarFiltro(valor, etiqueta) {
+        var visibles = 0;
+        filtros.forEach(function (b) {
+          var activo = b.getAttribute('data-filtro') === valor;
+          b.setAttribute('aria-pressed', String(activo));
+          b.classList.toggle('bg-petroleo', activo);
+          b.classList.toggle('text-white', activo);
+          b.classList.toggle('border-petroleo', activo);
+          b.classList.toggle('bg-white', !activo);
+          b.classList.toggle('text-petroleo', !activo);
+        });
+        items.forEach(function (it) {
+          var mostrar = valor === 'todos' || it.getAttribute('data-cat') === valor;
+          it.classList.toggle('oculto', !mostrar);
+          if (mostrar) { visibles++; }
+        });
+        estadoFiltro.textContent = 'Mostrando ' + visibles + ' productos de ' + etiqueta + '.';
+      }
+      filtros.forEach(function (b) {
+        b.addEventListener('click', function () {
+          aplicarFiltro(b.getAttribute('data-filtro'), b.textContent.trim());
+        });
+      });
+      aplicarFiltro('todos', 'todas las categorías');
+
+      /* ---------- Acordeón FAQ ---------- */
+      document.querySelectorAll('.faq-boton').forEach(function (boton) {
+        boton.addEventListener('click', function () {
+          var item = boton.closest('.faq-item');
+          var panel = document.getElementById(boton.getAttribute('aria-controls'));
+          var abrir = boton.getAttribute('aria-expanded') !== 'true';
+          boton.setAttribute('aria-expanded', String(abrir));
+          item.setAttribute('data-abierto', String(abrir));
+          panel.setAttribute('data-abierto', String(abrir));
+        });
+      });
+
+      /* ---------- Galería con visor ---------- */
+      var visor = document.getElementById('visor');
+      var visorImg = document.getElementById('visor-img');
+      var visorTexto = document.getElementById('visor-texto');
+      var fotos = Array.prototype.slice.call(document.querySelectorAll('.galeria-item'));
+      var fotoActual = 0;
+      var origenFoco = null;
+      function mostrarFoto(i) {
+        fotoActual = (i + fotos.length) % fotos.length;
+        var f = fotos[fotoActual];
+        visorImg.src = f.getAttribute('data-src');
+        visorImg.alt = f.getAttribute('data-alt');
+        visorTexto.textContent = f.getAttribute('data-alt');
+      }
+      fotos.forEach(function (f, i) {
+        f.setAttribute('aria-label', 'Ampliar imagen: ' + f.getAttribute('data-alt'));
+        f.addEventListener('click', function () {
+          origenFoco = f;
+          mostrarFoto(i);
+          if (typeof visor.showModal === 'function') { visor.showModal(); }
+        });
+      });
+      document.getElementById('visor-cerrar').addEventListener('click', function () { visor.close(); });
+      document.getElementById('visor-prev').addEventListener('click', function () { mostrarFoto(fotoActual - 1); });
+      document.getElementById('visor-sig').addEventListener('click', function () { mostrarFoto(fotoActual + 1); });
+      visor.addEventListener('click', function (e) { if (e.target === visor) { visor.close(); } });
+      visor.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') { mostrarFoto(fotoActual - 1); }
+        if (e.key === 'ArrowRight') { mostrarFoto(fotoActual + 1); }
+      });
+      visor.addEventListener('close', function () { if (origenFoco) { origenFoco.focus(); } });
+
+      /* ---------- Botones "Cotizar" que preseleccionan el servicio ---------- */
+      var form = document.getElementById('form-cotizar');
+      var selectServicio = document.getElementById('servicio');
+      document.querySelectorAll('.btn-cotizar').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var servicio = btn.getAttribute('data-servicio');
+          var existe = Array.prototype.some.call(selectServicio.options, function (o) { return o.value === servicio; });
+          if (existe) {
+            selectServicio.value = servicio;
+            if (/Torta|Dulcería/.test(servicio)) { setTipoCliente('Particular'); }
+            else if (/Pack|Coffee break/.test(servicio)) { setTipoCliente('Empresa'); }
+          }
+          window.setTimeout(function () { document.getElementById('nombre').focus({ preventScroll: true }); }, 600);
+        });
+      });
+
+      /* ---------- Formulario de cotización ---------- */
+      var camposEmpresa = document.getElementById('campos-empresa');
+      var estadoForm = document.getElementById('estado-form');
+      var btnEnviar = document.getElementById('btn-enviar');
+      var mensaje = document.getElementById('mensaje');
+      var contador = document.getElementById('contador-mensaje');
+      var fecha = document.getElementById('fecha');
+      var formCargadoEn = Date.now();
+      var enviando = false;
+
+      function setTipoCliente(valor) {
+        var radio = form.querySelector('input[name="tipo_cliente"][value="' + valor + '"]');
+        if (radio) { radio.checked = true; actualizarTipoCliente(); }
+      }
+      function tipoCliente() {
+        var r = form.querySelector('input[name="tipo_cliente"]:checked');
+        return r ? r.value : 'Particular';
+      }
+      function actualizarTipoCliente() {
+        var esEmpresa = tipoCliente() === 'Empresa';
+        camposEmpresa.classList.toggle('oculto', !esEmpresa);
+        document.getElementById('razon_social').required = esEmpresa;
+      }
+      form.querySelectorAll('input[name="tipo_cliente"]').forEach(function (r) {
+        r.addEventListener('change', actualizarTipoCliente);
+      });
+      actualizarTipoCliente();
+
+      function fechaISO(d) {
+        var m = String(d.getMonth() + 1).padStart(2, '0');
+        var dia = String(d.getDate()).padStart(2, '0');
+        return d.getFullYear() + '-' + m + '-' + dia;
+      }
+      var hoy = new Date();
+      hoy.setHours(0, 0, 0, 0);
+      var fechaMin = new Date(hoy); fechaMin.setDate(fechaMin.getDate() + 2);
+      var fechaMax = new Date(hoy); fechaMax.setFullYear(fechaMax.getFullYear() + 1);
+      fecha.min = fechaISO(fechaMin);
+      fecha.max = fechaISO(fechaMax);
+
+      mensaje.addEventListener('input', function () {
+        contador.textContent = mensaje.value.length + ' / 1200';
+      });
+
+      /* Limpieza de texto: quita caracteres de control y símbolos de etiquetas HTML */
+      function limpiar(valor, max) {
+        return String(valor || '')
+          .normalize('NFC')
+          .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F\u200B-\u200F\u2028\u2029\uFEFF]/g, '')
+          .replace(/[<>]/g, '')
+          .trim()
+          .slice(0, max);
+      }
+
+      function rutValido(rut) {
+        var limpio = rut.replace(/[.\-\s]/g, '').toUpperCase();
+        if (!/^\d{7,8}[0-9K]$/.test(limpio)) { return false; }
+        var cuerpo = limpio.slice(0, -1);
+        var dv = limpio.slice(-1);
+        var suma = 0;
+        var mult = 2;
+        for (var i = cuerpo.length - 1; i >= 0; i--) {
+          suma += parseInt(cuerpo.charAt(i), 10) * mult;
+          mult = mult === 7 ? 2 : mult + 1;
+        }
+        var res = 11 - (suma % 11);
+        var esperado = res === 11 ? '0' : res === 10 ? 'K' : String(res);
+        return dv === esperado;
+      }
+
+      function marcarError(id, texto) {
+        var campo = document.getElementById(id);
+        var err = document.getElementById('err-' + id);
+        if (campo) { campo.setAttribute('aria-invalid', texto ? 'true' : 'false'); }
+        if (err) { err.textContent = texto || ''; }
+      }
+
+      function contarEnlaces(t) {
+        var m = t.match(/(https?:\/\/|www\.|\.[a-z]{2,}\/)/gi);
+        return m ? m.length : 0;
+      }
+
+      function validar(d) {
+        var errores = {};
+        if (d.tipo_cliente === 'Empresa') {
+          if (d.razon_social.length < 2) { errores.razon_social = 'Indica el nombre de la empresa o institución.'; }
+          if (d.rut && !rutValido(d.rut)) { errores.rut = 'El RUT no es válido. Ejemplo: 76.123.456-0'; }
+        }
+        if (d.nombre.length < 2 || !/^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ' .\-]+$/.test(d.nombre)) {
+          errores.nombre = 'Ingresa tu nombre usando solo letras.';
+        }
+        if (!/^[^\s@]{1,64}@[^\s@]{1,100}\.[A-Za-z]{2,}$/.test(d.email) || d.email.length > 120) {
+          errores.email = 'Ingresa un correo válido, por ejemplo nombre@empresa.cl';
+        }
+        if (d.telefono) {
+          var tel = d.telefono.replace(/[\s\-()]/g, '');
+          if (!/^(\+?56)?\d{9}$/.test(tel)) { errores.telefono = 'Usa un número chileno de 9 dígitos, por ejemplo +56 9 1234 5678.'; }
+        }
+        var opciones = Array.prototype.map.call(selectServicio.options, function (o) { return o.value; });
+        if (!d.servicio || opciones.indexOf(d.servicio) === -1) { errores.servicio = 'Selecciona un servicio.'; }
+        if (!d.fecha || !/^\d{4}-\d{2}-\d{2}$/.test(d.fecha)) {
+          errores.fecha = 'Selecciona la fecha del evento.';
+        } else if (d.fecha < fecha.min || d.fecha > fecha.max) {
+          errores.fecha = 'Elige una fecha entre el ' + fecha.min.split('-').reverse().join('-') + ' y el ' + fecha.max.split('-').reverse().join('-') + '.';
+        }
+        var n = Number(d.personas);
+        if (!Number.isInteger(n) || n < 1 || n > 2000) { errores.personas = 'Indica un número entre 1 y 2000.'; }
+        if (contarEnlaces(d.mensaje) > 0 || contarEnlaces(d.sector) > 0) {
+          errores.mensaje = 'Por seguridad no se permiten enlaces. Si tienes una referencia, envíala por Instagram.';
+        }
+        if (!document.getElementById('acepto').checked) { errores.acepto = 'Debes aceptar para poder enviar.'; }
+        return errores;
+      }
+
+      /* Límite de envíos por navegador: 1 por minuto y 3 por hora */
+      var CLAVE_ENVIOS = 'dt_envios_cotizacion';
+      function leerEnvios() {
+        try {
+          var lista = JSON.parse(window.localStorage.getItem(CLAVE_ENVIOS) || '[]');
+          return Array.isArray(lista) ? lista.filter(function (t) { return typeof t === 'number'; }) : [];
+        } catch (e) { return []; }
+      }
+      function registrarEnvio() {
+        try {
+          var ahora = Date.now();
+          var lista = leerEnvios().filter(function (t) { return ahora - t < 3600000; });
+          lista.push(ahora);
+          window.localStorage.setItem(CLAVE_ENVIOS, JSON.stringify(lista));
+        } catch (e) { /* sin almacenamiento disponible: se omite el registro */ }
+      }
+      function motivoBloqueo() {
+        var ahora = Date.now();
+        var recientes = leerEnvios().filter(function (t) { return ahora - t < 3600000; });
+        if (recientes.length >= 3) { return 'Ya enviaste varias solicitudes en la última hora. Te responderemos pronto; si necesitas agregar algo, escríbenos por Instagram.'; }
+        if (recientes.length && ahora - recientes[recientes.length - 1] < 60000) { return 'Espera un minuto antes de enviar otra solicitud.'; }
+        return '';
+      }
+
+      function mostrarEstado(tipo, texto) {
+        estadoForm.classList.remove('hidden', 'bg-petroleo-50', 'text-petroleo-800', 'bg-frutilla-100', 'text-frutilla-600');
+        if (tipo === 'ok') { estadoForm.classList.add('bg-petroleo-50', 'text-petroleo-800'); }
+        else { estadoForm.classList.add('bg-frutilla-100', 'text-frutilla-600'); }
+        estadoForm.textContent = texto;
+      }
+
+      function setEnviando(activo) {
+        enviando = activo;
+        btnEnviar.disabled = activo;
+        btnEnviar.querySelector('.icono-enviar').classList.toggle('oculto', activo);
+        btnEnviar.querySelector('.icono-cargando').classList.toggle('oculto', !activo);
+        btnEnviar.querySelector('.texto-enviar').textContent = activo ? 'Enviando…' : 'Enviar solicitud';
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (enviando) { return; }
+
+        var datos = {
+          tipo_cliente: tipoCliente() === 'Empresa' ? 'Empresa' : 'Particular',
+          razon_social: limpiar(form.razon_social.value, 100),
+          rut: limpiar(form.rut.value, 12),
+          nombre: limpiar(form.nombre.value, 80),
+          email: limpiar(form.email.value, 120).toLowerCase(),
+          telefono: limpiar(form.telefono.value, 16),
+          servicio: limpiar(form.servicio.value, 60),
+          fecha: limpiar(form.fecha.value, 10),
+          personas: limpiar(form.personas.value, 4),
+          entrega: form.querySelector('input[name="entrega"]:checked') && form.querySelector('input[name="entrega"]:checked').value === 'Retiro coordinado' ? 'Retiro coordinado' : 'Delivery',
+          sector: limpiar(form.sector.value, 60),
+          mensaje: limpiar(form.mensaje.value, 1200)
+        };
+
+        ['razon_social', 'rut', 'nombre', 'email', 'telefono', 'servicio', 'fecha', 'personas', 'sector', 'mensaje', 'acepto'].forEach(function (id) { marcarError(id, ''); });
+        var errores = validar(datos);
+        var ids = Object.keys(errores);
+        if (ids.length) {
+          ids.forEach(function (id) { marcarError(id, errores[id]); });
+          mostrarEstado('error', 'Revisa los campos marcados antes de enviar.');
+          var primero = document.getElementById(ids[0]);
+          if (primero) { primero.focus(); }
+          return;
+        }
+
+        /* Señales de bot: campo trampa marcado o envío demasiado rápido */
+        if (document.getElementById('botcheck').checked || Date.now() - formCargadoEn < 4000) {
+          mostrarEstado('ok', '¡Gracias! Recibimos tu solicitud.');
+          form.reset();
+          return;
+        }
+
+        var bloqueo = motivoBloqueo();
+        if (bloqueo) { mostrarEstado('error', bloqueo); return; }
+
+        if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(WEB3FORMS_ACCESS_KEY)) {
+          mostrarEstado('error', 'El formulario aún no está configurado. Por ahora escríbenos por Instagram @dulcetiberia.');
+          return;
+        }
+
+        var cuerpo = {
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: 'Nueva cotización DulceTiberia: ' + datos.servicio + ' (' + datos.tipo_cliente + ')',
+          from_name: 'Sitio web DulceTiberia',
+          botcheck: false,
+          'Tipo de cliente': datos.tipo_cliente,
+          'Empresa': datos.tipo_cliente === 'Empresa' ? datos.razon_social : '',
+          'RUT empresa': datos.tipo_cliente === 'Empresa' ? datos.rut : '',
+          'Nombre': datos.nombre,
+          email: datos.email,
+          'Teléfono': datos.telefono,
+          'Servicio': datos.servicio,
+          'Fecha del evento': datos.fecha.split('-').reverse().join('-'),
+          'Personas o porciones': datos.personas,
+          'Entrega': datos.entrega,
+          'Sector': datos.sector,
+          'Mensaje': datos.mensaje
+        };
+
+        var controlador = typeof AbortController === 'function' ? new AbortController() : null;
+        var tiempoLimite = window.setTimeout(function () { if (controlador) { controlador.abort(); } }, 15000);
+        setEnviando(true);
+        mostrarEstado('ok', 'Enviando tu solicitud…');
+
+        fetch(WEB3FORMS_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(cuerpo),
+          signal: controlador ? controlador.signal : undefined,
+          credentials: 'omit',
+          referrerPolicy: 'strict-origin-when-cross-origin'
+        })
+          .then(function (r) { return r.json().catch(function () { return { success: false }; }); })
+          .then(function (res) {
+            if (res && res.success === true) {
+              registrarEnvio();
+              form.reset();
+              actualizarTipoCliente();
+              contador.textContent = '0 / 1200';
+              formCargadoEn = Date.now();
+              mostrarEstado('ok', '¡Gracias, ' + datos.nombre.split(' ')[0] + '! Recibimos tu solicitud y te responderemos a ' + datos.email + ' dentro de 24 horas hábiles.');
+            } else {
+              mostrarEstado('error', 'No pudimos enviar tu solicitud. Inténtalo nuevamente en unos minutos o escríbenos por Instagram @dulcetiberia.');
+            }
+          })
+          .catch(function () {
+            mostrarEstado('error', 'Hubo un problema de conexión. Revisa tu internet e inténtalo otra vez, o escríbenos por Instagram @dulcetiberia.');
+          })
+          .then(function () {
+            window.clearTimeout(tiempoLimite);
+            setEnviando(false);
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
