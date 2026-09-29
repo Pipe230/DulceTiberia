@@ -17,7 +17,7 @@ Protecciones incluidas:
 
 - Campo trampa invisible (`botcheck`) y bloqueo de envíos hechos en menos de 4 segundos (bots).
 - Límite por navegador: 1 envío por minuto y 3 por hora.
-- Validación de nombre, correo, teléfono chileno, RUT (módulo 11), fecha (mínimo 48 h de anticipación) y cantidad de personas.
+- Validación de nombre, correo, teléfono chileno, RUT (módulo 11), fecha (mínimo 1 semana de anticipación) y cantidad de personas.
 - Limpieza de caracteres de control y de `<` `>`; no se aceptan enlaces en los mensajes; sin archivos adjuntos.
 - Los mensajes al usuario se muestran con `textContent` (sin inyección de HTML).
 - Política de seguridad de contenido (CSP) que solo permite enviar datos a `api.web3forms.com`.
