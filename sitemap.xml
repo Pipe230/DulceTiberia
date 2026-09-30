@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dulcetiberia.cl/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <image:image><image:loc>https://dulcetiberia.cl/assets/fotos/torta-novios-flores.webp</image:loc></image:image>
+    <image:image><image:loc>https://dulcetiberia.cl/assets/fotos/torta-tematica-futbol.webp</image:loc></image:image>
+    <image:image><image:loc>https://dulcetiberia.cl/assets/fotos/cupcakes-rosas.webp</image:loc></image:image>
+    <image:image><image:loc>https://dulcetiberia.cl/assets/fotos/cakesicles-baby-shower.webp</image:loc></image:image>
+    <image:image><image:loc>https://dulcetiberia.cl/assets/fotos/pie-limon-tartaleta-manjar.webp</image:loc></image:image>
+    <image:image><image:loc>https://dulcetiberia.cl/assets/og-dulcetiberia.jpg</image:loc></image:image>
+  </url>
+</urlset>
