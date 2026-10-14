@@ -23,3 +23,7 @@ Protecciones incluidas:
 - Política de seguridad de contenido (CSP) que solo permite enviar datos a `api.web3forms.com`.
 
 Para cambiar el correo de destino, genera una nueva clave en web3forms.com y reemplázala en `index.html`.
+
+## Organizador semanal
+
+La carpeta [`organizador/`](organizador/README.md) tiene un Google Apps Script que, a partir de una planilla de pedidos, envía cada domingo el plan de la semana: compras por día, preparaciones y entregas. No forma parte del sitio.

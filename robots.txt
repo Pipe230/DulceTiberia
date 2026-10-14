@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /organizador/
 
 Sitemap: https://dulcetiberia.cl/sitemap.xml
